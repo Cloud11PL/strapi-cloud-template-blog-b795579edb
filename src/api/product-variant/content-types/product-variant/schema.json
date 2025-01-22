@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_variants",
+  "info": {
+    "singularName": "product-variant",
+    "pluralName": "product-variants",
+    "displayName": "Product Variant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "variant_id": {
+      "type": "string"
+    },
+    "variant_name": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "product_slug": {
+      "type": "string"
+    },
+    "channels": {
+      "type": "json"
+    },
+    "sku": {
+      "type": "string"
+    }
+  }
+}
