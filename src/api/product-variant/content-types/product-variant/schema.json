@@ -4,26 +4,28 @@
   "info": {
     "singularName": "product-variant",
     "pluralName": "product-variants",
-    "displayName": "Product Variant"
+    "displayName": "Product Variant",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "variant_id": {
+    "variantId": {
+      "type": "string",
+      "unique": true
+    },
+    "variantName": {
       "type": "string"
     },
-    "variant_name": {
+    "productId": {
       "type": "string"
     },
-    "product_id": {
+    "productName": {
       "type": "string"
     },
-    "product_name": {
-      "type": "string"
-    },
-    "product_slug": {
+    "productSlug": {
       "type": "string"
     },
     "channels": {

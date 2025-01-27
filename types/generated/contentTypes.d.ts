@@ -538,6 +538,7 @@ export interface ApiProductVariantProductVariant
   extends Struct.CollectionTypeSchema {
   collectionName: 'product_variants';
   info: {
+    description: '';
     displayName: 'Product Variant';
     pluralName: 'product-variants';
     singularName: 'product-variant';
@@ -556,16 +557,16 @@ export interface ApiProductVariantProductVariant
       'api::product-variant.product-variant'
     > &
       Schema.Attribute.Private;
-    product_id: Schema.Attribute.String;
-    product_name: Schema.Attribute.String;
-    product_slug: Schema.Attribute.String;
+    productId: Schema.Attribute.String;
+    productName: Schema.Attribute.String;
+    productSlug: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     sku: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    variant_id: Schema.Attribute.String;
-    variant_name: Schema.Attribute.String;
+    variantId: Schema.Attribute.String & Schema.Attribute.Unique;
+    variantName: Schema.Attribute.String;
   };
 }
 
